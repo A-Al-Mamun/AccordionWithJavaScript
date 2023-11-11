@@ -7,6 +7,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.header{
+    background-color: blueviolet;
+    padding: 10px 50px;
+}
+.header i{
+    color: #fff;
+    font-size: 28px;
+    display: none;
+}
+
+.header .menu a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
 body h1{
     text-align: center;
     margin: 50px 0 -50px;
@@ -54,6 +71,31 @@ body h1{
 @media (max-width:600px) {
     .accordion-body{
         max-width: 500px;
+    }
+}
+@media (max-width:590px) {
+    .header{
+        position: relative;
+    }
+    .header i{
+        display: block;
+    }
+    .menu{
+        display: none; 
+        background: rgba(137, 43, 226, 0.466);
+        position: absolute;
+        top: 48px;
+        left: 0;
+        height: 94.8vh;
+    }
+    .menu a{
+        display: block;
+        margin: 20px 0; 
+        width: 100%;
+        transition: 0.9s; 
+    }
+    .menu a:hover{
+        background-color: #000;
     }
 }
 @media (max-width:570px) {

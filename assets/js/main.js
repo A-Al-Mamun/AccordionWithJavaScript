@@ -1,4 +1,16 @@
+    // NavBar Section Start
+        
+    function myFunction() {
+        var navBar = document.getElementsByClassName("menu")[0];
+        if (navBar.style.display === "block") {
+            navBar.style.display = "none";
+        } else {
+            navBar.style.display = "block";
+        }
+    }
+    // NavBar Section End
     
+    // Accordion Start
     const accordItem = document.querySelectorAll('.accord-item');
 
     accordItem.forEach(item => {
