@@ -36,16 +36,22 @@ body h1{
     margin-bottom: 5px;
 }
 .accordion-body .accord-item a{
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
     text-decoration: none;
-    display: inline-block;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
     background: rgba(0, 255, 42, 0.507);
-    width: 100%;
     border-radius: 5px;
     cursor: pointer;
+}
+.minus{
+    display: none;
 }
 .accordion-body .accord-item .accord-text{
     display: none;

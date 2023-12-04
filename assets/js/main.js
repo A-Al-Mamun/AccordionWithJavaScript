@@ -17,11 +17,17 @@
         const title = item.querySelector('.accord-title');
 
         title.addEventListener('click', () => {
+            const plus = document.querySelector('.plus');
+            const minus = document.querySelector('.minus');
             for(let i = 0; i < accordItem.length; i++){
-                if(accordItem[i] != item){
+                if((accordItem[i] != item) && (minus.style.display != 'none')){
                     accordItem[i].classList.remove('active');
+                    plus.style.display = 'block';
+                    // minus.style.display = 'none';
                 }else{
                     item.classList.toggle('active');
+                    plus.style.display = 'none';
+                    minus.style.display = 'block';
                 }
             }
         });
